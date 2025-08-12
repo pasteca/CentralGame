@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GAMER DESCONHECIDO</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #121212;
+            color: #eee;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #66ccff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GAMER DESCONHECIDO</h1>
+        <nav>
+            <button style="background:#8000ff; color:#ffffff; font-weight:bold; text-transform:uppercase; border:none; padding:8px 16px; margin:0 5px; border-radius:4px; cursor:pointer;" onclick="location.href='index.html'">INICIAL</button>
+            <button style="background:#8000ff; color:#fff; font-weight:bold; text-transform:uppercase; border:none; padding:8px 16px; margin:0 5px; border-radius:4px; cursor:pointer;" onclick="location.href='metas.html'">METAS</button>
+            <button style="background:#8000ff; color:#fff; font-weight:bold; text-transform:uppercase; border:none; padding:8px 16px; margin:0 5px; border-radius:4px; cursor:pointer;" onclick="location.href='rumores.html'">RUMORES</button>
+            <button style="background:#8000ff; color:#fff; font-weight:bold; text-transform:uppercase; border:none; padding:8px 16px; margin:0 5px; border-radius:4px; cursor:pointer;" onclick="location.href='atualizacoes.html'">ATUALIZAÇÕES</button>
+            <button style="background:#8000ff; color:#fff; font-weight:bold; text-transform:uppercase; border:none; padding:8px 16px; margin:0 5px; border-radius:4px; cursor:pointer;" onclick="location.href='teste.html'">TESTE</button>
+        </nav>
+    </header>
+    <main>
+        <div style="background:#222222; padding:24px; border-radius:8px; box-shadow:0 2px 8px #0000004d; margin-bottom:24px;">
+            <h2 style="color:#ffffff;">Bem-vindo, Operador!</h2>
+            <p style="color:#eeeeee;">
+                Este é o seu ponto de encontro para ficar por dentro de todas as novidades, rumores, metas e atualizações do Warzone. Aqui você encontra informações essenciais para melhorar seu desempenho, acompanhar as mudanças do jogo e se manter sempre à frente no campo de batalha. Prepare-se para evoluir e conquistar vitórias!
+            </p>
+        </div>
+        <!-- ======= EVENTO XP EM DOBRO ======= -->
+        <div style="
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_W2fgm0TMxnDbl1FaxXfSP0nip4oB3YvWqYiW3Ud_wULyOncm28fTGuq_btfy4hJHg4WHuCMavsaus8LAF1GDT_DAoNU0UZAcAGos2bcuVz5Q_eS3XQxyBd0Cn_Y0c97OuqSsAb80zFEQ5yDO2pR6ult-aUBv7XAZQkdBszVtwiZ0oK1bCi1FMVoSL_YO/s1600/fa6bb-17166654200162-1920.jpg');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 200px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0 0 15px #00000080;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+">
+  <div style="background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 8px;">
+    <h2 style="margin: 0 0 10px;">EVENTO DE XP EM DOBRO PARA JOGADOR E ARMAS</h2>
+    <div id="countdown" style="font-size: 1.5em; font-weight: bold;"></div>
+  </div>
+</div>
+<script>
+  const countdownElement = document.getElementById('countdown');
+  // Cria uma data para amanhã às 14:00:00
+  const now = new Date();
+  const endTime = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate() + 1,
+    14, 0, 0
+  ).getTime();
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const distance = endTime - now;
+    if (distance < 0) {
+      countdownElement.innerHTML = "Evento encerrado!";
+      clearInterval(interval);
+      return;
+    }
+    const hours = Math.floor((distance / (1000 * 60 * 60)));
+    const minutes = Math.floor((distance / (1000 * 60)) % 60);
+    const seconds = Math.floor((distance / 1000) % 60);
+    countdownElement.innerHTML = 
+      `${hours.toString().padStart(2,'0')} : ${minutes.toString().padStart(2,'0')} : ${seconds.toString().padStart(2,'0')}`;
+  }
+  updateCountdown();
+  const interval = setInterval(updateCountdown, 1000);
+</script>
+        <!-- ======= EVENTO ZUMBIS ======= -->
+         <div style="
+  background-image: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiaM_gi7xxKSie3RK37hLH6E3CzzO4TJoVjXWVAL4DW1T3fOSnXhVi9rj4uCuxj39CgAsDQ9XRnX2bmj3d7ppNd6rU1wp7igMZgltmnuVEStAOH5Ij-b-H_Zl1iNq8I6hyjFtHsj4DZrnVlUv_qDIKBFHxu3_nmcPOB2j3Fi4WK4djnk9kUV-_r6nL2EJH_/s1600/Captura%20de%20tela%202025-08-10%20203425.png');
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 150px;
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+">
+  <div style="background: rgba(0,0,0,0.5); padding: 10px 20px; border-radius: 8px; max-width: 600px; margin: 0 auto;">
+    <div style="font-size: 1.3em; font-weight: bold;">INFORMAÇÃO IMPORTANTE</div>
+    <div id="countdown2" style="font-size: 1.8em; font-weight: bold; margin-top: 12px;"></div>
+  </div>
+</div>
+
+<script>
+  window.onload = function() {
+    const countdown2 = document.getElementById('countdown2');
+    
+    const now = new Date();
+
+    // Inicio do evento: daqui 3 dias e 17 horas
+    const eventStart = new Date(now.getTime() + ((3 * 24 + 17) * 60 * 60 * 1000));
+
+    // Fim do evento: 13 de agosto às 14h (ano atual)
+    const eventEnd = new Date();
+    eventEnd.setDate(13);
+    eventEnd.setHours(14, 0, 0, 0);
+
+    if (now > eventEnd) {
+      eventEnd.setMonth(eventEnd.getMonth() + 1);
+    }
+    function formatTime(distance) {
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance / (1000 * 60 * 60)) % 24);
+      const minutes = Math.floor((distance / (1000 * 60)) % 60);
+      const seconds = Math.floor((distance / 1000) % 60);
+      return `${days}d ${hours.toString().padStart(2,'0')}h : ${minutes.toString().padStart(2,'0')}m : ${seconds.toString().padStart(2,'0')}s`;
+    }
+    function updateCountdown2() {
+      const now = new Date().getTime();
+
+      if (now < eventStart.getTime()) {
+        const distanceToStart = eventStart.getTime() - now;
+        countdown2.innerHTML = `Evento começa em: ${formatTime(distanceToStart)}`;
+      } else if (now >= eventStart.getTime() && now <= eventEnd.getTime()) {
+        const distanceToEnd = eventEnd.getTime() - now;
+        countdown2.innerHTML = `Evento termina em: ${formatTime(distanceToEnd)}`;
+      } else {
+        countdown2.innerHTML = "Evento encerrado!";
+        clearInterval(interval2);
+      }
+    }
+
+    updateCountdown2();
+    const interval2 = setInterval(updateCountdown2, 1000);
+  }
+</script>
+
+
+        <!-- ======= SOBRE O SITE ======= -->
+        <div style="background:#181818; padding:20px; border-radius:8px; box-shadow:0 1px 4px #00000033; margin-bottom:24px; border-left:4px solid #66ccff;">
+            <h3 style="color:#66ccff; margin-top:0;">Sobre o Site GamerDesconhecido</h3>
+            <p style="color:#cccccc; margin-bottom:0;">
+                Este site é dedicado ao jogo <strong>Call of Duty: Warzone</strong>. Aqui você encontrará informações, dicas, rumores, metas e atualizações para ajudar jogadores de todos os níveis a se manterem informados e melhorarem sua experiência no Warzone.
+            </p>
+        </div>
+        <!-- ======= POLITICA DE PRIVACIDADE ======= -->
+        <div style="background: #232323; padding: 18px 24px; border-radius: 8px; color: #bbbbbb; font-family: Arial, sans-serif; max-width: 600px; margin: auto;">
+            <div style="display: flex; justify-content: space-between; align-items: center; cursor: pointer;" id="toggle-privacy">
+                <span style="font-size: 1em;">Política de Privacidade</span>
+                <span id="arrow" style="font-size: 2em; color: #66ccff; transition: transform 0.2s;">&#8595;</span>
+            </div>
+            <div id="privacy-content" style="display: none; color: #cccccc; padding-top: 18px; font-size: 0.95em; line-height: 1.4;">
+                <h3 style="color: #66ccff; margin-top: 0;">Política de Privacidade</h3>
+                <p>O site GamerDesconhecido valoriza a sua privacidade. Esta política explica como coletamos, usamos e protegemos suas informações.</p>
+                <h4>1. Coleta de Informações</h4>
+                <p>Não coletamos informações pessoais identificáveis dos usuários. Apenas dados anônimos, como estatísticas de acesso, podem ser coletados para melhorar a experiência do site.</p>
+                <h4>2. Uso de Cookies</h4>
+                <p>Utilizamos cookies apenas para fins de análise de tráfego e funcionamento do site. Você pode desativar os cookies nas configurações do seu navegador.</p>
+                <h4>3. Compartilhamento de Dados</h4>
+                <p>Não compartilhamos, vendemos ou transferimos informações dos usuários para terceiros.</p>
+                <h4>4. Links Externos</h4>
+                <p>Nosso site pode conter links para outros sites. Não somos responsáveis pelas práticas de privacidade desses sites.</p>
+                <h4>5. Alterações na Política</h4>
+                <p>Podemos atualizar esta política periodicamente. Recomendamos que você revise esta página regularmente.</p>
+                <h4>6. Contato</h4>
+                <p>Em caso de dúvidas sobre esta política, entre em contato pelo e-mail: contato@gamerdesconhecido.com</p>
+            </div>
+        </div>
+        <script>
+            const toggleBtn = document.getElementById('toggle-privacy');
+            const privacyContent = document.getElementById('privacy-content');
+            const arrow = document.getElementById('arrow');
+            toggleBtn.addEventListener('click', function () {
+                if (privacyContent.style.display === 'none' || privacyContent.style.display === '') {
+                    privacyContent.style.display = 'block';
+                    arrow.style.transform = 'rotate(180deg)';
+                } else {
+                    privacyContent.style.display = 'none';
+                    arrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        </script>
+        <!--
+        <div style="margin-top:24px; text-align:center;">
+            <a href="https://twitter.com/gamerdesconhecido" style="color:#66ccff; margin:0 8px;" target="_blank" rel="noopener">Twitter</a> |
+            <a href="mailto:contato@gamerdesconhecido.com" style="color:#66ccff; margin:0 8px;">Contato</a>
+        </div>
+        -->
+    </main>
+    <footer>
+        &copy; 2025 GamerDesconhecido
+    </footer>
+</body>
+</html>
