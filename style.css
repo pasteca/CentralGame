@@ -25,7 +25,7 @@ span {
 }
 
 body {
-    background: #202020;
+    background: #3200a7;
     padding-top: 110px;
     padding-bottom: 80px;
 }
@@ -104,7 +104,7 @@ header h1 {
     position: fixed;
     top: 55px;
     width: 100%;
-    background: #1a1a1a;
+    background: #3200a7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,8 +119,8 @@ header h1 {
     padding: 10px 16px;
     border: none;
     border-radius: 8px;
-    background: #3200a7;
-    color: #fff;
+    background: #ffffff;
+    color: #3200a7;
     cursor: pointer;
     transition: all 0.3s;
     font-size: 16px;
@@ -230,7 +230,7 @@ p {
 
 
 strong {
-    color: #ffffff; /* ou a cor que quiser */
+    color: #000000; /* ou a cor que quiser */
     font-weight: 700; /* mantém o negrito */
     background: none; /* remove o fundo */
     padding: 0;       /* remove o espaçamento extra */
@@ -318,4 +318,3 @@ strong {
     width: 100% !important;
     max-width: 100% !important;
 }
-
