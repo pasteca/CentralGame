@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+h1,
+h2,
+h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body,
+p,
+li,
+span {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color: #ddd;
+}
+
+body {
+    background: #0d0d0d;
+    padding-top: 110px;
+    padding-bottom: 80px;
+}
+
+/* Cabeçalho fixo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #E1C200, #E1C200);
+    text-align: center;
+    padding: 12px;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 0 0 8px #E1C200;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    position: fixed;
+    top: 55px;
+    width: 100%;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+    border-bottom: 2px solid #E1C200;
+}
+
+/* Botão INÍCIO e lupa */
+.search-bar .home-button,
+.search-bar .search-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #6a0dad;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar .home-button:hover,
+.search-bar .search-button:hover {
+    background: #E1C200;
+    box-shadow: 0 0 10px #E1C200;
+}
+
+/* Input de pesquisa */
+.search-bar input {
+    flex: 1;
+    max-width: 70%;
+    padding: 10px;
+    margin: 0 8px;
+    border-radius: 8px;
+    border: 2px solid #E1C200;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.search-bar {
+    position: fixed;
+    top: 55px;
+    width: 100%;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    z-index: 1000;
+    border-bottom: 2px solid #E1C200;
+}
+
+/* Botão INÍCIO e lupa */
+.search-bar .home-button,
+.search-bar .search-button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    background: #E1C200;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-bar .home-button:hover,
+.search-bar .search-button:hover {
+    background: #E1C200;
+    box-shadow: 0 0 10px #E1C200;
+}
+
+/* Ícone de lupa dentro do botão */
+.search-bar .search-button svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+}
+
+/* Input de pesquisa */
+.search-bar input {
+    flex: 1;
+    max-width: 70%;
+    padding: 10px;
+    margin: 0 8px;
+    border-radius: 8px;
+    border: 2px solid #E1C200;
+    background: #111;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+/* Área de posts */
+main {
+    padding: 15px;
+}
+
+.post {
+    background: #1a1a1a;
+    padding: 18px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    /* removido: transition */
+}
+
+/* hover removido */
+/*
+.post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 14px rgba(138, 43, 226, 0.6);
+}
+*/
+
+/* Títulos */
+h1 {
+    font-size: 26px;
+    color: #fff;
+    text-shadow: 0 0 8px #E1C200;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 22px;
+    color: #E1C200;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-shadow: 0 0 6px #E1C200;
+}
+
+h3 {
+    font-size: 18px;
+    color: #ffd700;
+    margin-bottom: 6px;
+    font-weight: 500;
+    text-shadow: 0 0 4px rgba(255, 215, 0, 0.6);
+}
+
+/* Parágrafos */
+p {
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+.post ul {
+    list-style-position: inside;
+    /* ou outside, dependendo do efeito desejado */
+    padding-left: 20px;
+    /* afasta as bolinhas da borda */
+    margin-bottom: 10px;
+    /* opcional, espaço entre listas e texto */
+}
+
+.post li {
+    margin-bottom: 6px;
+    /* espaço entre itens da lista */
+    color: #ddd;
+    /* mantém a cor do texto do post */
+}
+
+
+/* Negrito */
+strong {
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(90deg, #E1C200, #E1C200);
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* Imagens dentro dos posts */
+.post img {
+    display: block;
+    /* garante centralização */
+    margin: 0 auto 15px;
+    /* centraliza e dá espaço embaixo */
+    width: 100%;
+    /* ocupa toda a largura disponível */
+    max-width: 100%;
+    /* nunca ultrapassa a largura do container */
+    height: auto;
+    /* mantém proporção */
+    border-radius: 10px;
+    /* bordas arredondadas */
+}
+
+
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #E1C200, #E1C200);
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 0;
+    z-index: 1000;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.bottom-menu button {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    /* ícone em cima, texto embaixo */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    padding: 6px 12px;
+    border-radius: 8px;
+    width: 60px;
+    /* garante largura igual para todos */
+    text-align: center;
+}
+
+/* Hover mais chamativo */
+.bottom-menu button:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+    text-shadow: 0 0 8px #ffd700, 0 0 12px #ffea00;
+    background: rgba(255, 255, 0, 0.1);
+}
+
+/* Ícones dentro do botão */
+.bottom-menu button i {
+    font-size: 20px;
+    margin-bottom: 4px;
+    /* espaço entre ícone e texto */
+    display: block;
+    transition: 0.3s;
+}
+
+.bottom-menu button:hover i {
+    color: #ffd700;
+    text-shadow: 0 0 8px #ffd700, 0 0 12px #ffea00;
+}

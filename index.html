@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CENTRAL GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>CENTRAL GAME</h1>
+    </header>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar">
+        <button class="home-button" onclick="window.location.href='index.html'">
+            INÍCIO
+        </button>
+        <input type="text" id="searchInput" placeholder="Pesquisar...">
+        <button class="search-button" onclick="searchPosts()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85zm-5.242.656a5 5 0 1 1 0-10 5 5 0 0 1 0 10z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Área de posts -->
+    <main id="postContainer">
+        <article class="post" data-tags="noticias warzone call of duty">
+            <h2>Nova atualização do Warzone</h2>
+            <p>Detalhes sobre a última atualização com armas e mapas novos.</p>
+        </article>
+
+        <article class="post" data-tags="rumores gta6">
+            <h2>Rumores sobre GTA 6</h2>
+            <p>Vazamentos indicam possível lançamento em 2026.</p>
+        </article>
+
+        <article class="post" data-tags="metas esports csgo">
+            <h2>Metas do cenário competitivo CS:GO</h2>
+            <p>Equipes definem objetivos para o próximo campeonato mundial.</p>
+        </article>
+
+        <article class="post" data-tags="atualizações fortnite">
+            <h2>Fortnite recebe nova temporada</h2>
+            <p>Com skins inéditas e eventos especiais.</p>
+        </article>
+
+        
+
+    </main>
+
+    <!-- Menu fixo no rodapé -->
+    <nav class="bottom-menu">
+        <button onclick="filterCategory('noticias')">Notícias</button>
+        <button onclick="filterCategory('metas')">Metas</button>
+        <button onclick="filterCategory('rumores')">Rumores</button>
+        <button onclick="filterCategory('atualizações')">Atualizações</button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
