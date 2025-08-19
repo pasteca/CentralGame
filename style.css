@@ -229,14 +229,14 @@ p {
 }
 
 
-/* Negrito */
 strong {
-    color: #ffffff;
-    font-weight: 700;
-    background: linear-gradient(90deg, #3200a7, #3200a7);
-    padding: 2px 5px;
-    border-radius: 4px;
+    color: #ffffff; /* ou a cor que quiser */
+    font-weight: 700; /* mantém o negrito */
+    background: none; /* remove o fundo */
+    padding: 0;       /* remove o espaçamento extra */
+    border-radius: 0; /* remove cantos arredondados */
 }
+
 
 /* Imagens dentro dos posts */
 .post img {
@@ -318,3 +318,4 @@ strong {
     width: 100% !important;
     max-width: 100% !important;
 }
+
